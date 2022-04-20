@@ -1,0 +1,18 @@
+SCELTE PER IL FETCHING:
+
+tra JPACorso e Allievo --> DEFAULT
+
+cosicchè nel caso in cui volessi recuperare le informazioni relative a Corso non devo caricare
+tutti i dati relativi degli allievi.
+ 
+
+tra Allievo e JPACorso  -->EAGER
+
+vengono caricati tutti i corsi a cui partecipa un Allievo
+
+per le altre associazioni ho lasciato --> DEFAULT
+
+
+CASCADE:
+
+ho inserito i Cascade sia su JPACorso-Docente che su Docente_JPACorso
